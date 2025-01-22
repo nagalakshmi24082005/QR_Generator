@@ -1,0 +1,109 @@
+ 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+ 
+div {
+  text-align: center;
+  background: burlywood;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  color: black;  
+}
+ 
+h1 {
+  color: green;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ 
+p {
+  font-size: 16px;
+  color: blueviolet;
+  margin: 10px 0;
+}
+ 
+.Qr-Image {
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 300px; 
+  height: 300px;  
+  object-fit: contain;
+}
+
+ 
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+ 
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.download {
+  background-color: #2196f3;
+}
+
+button.download:hover {
+  background-color: #1e88e5;
+}
+ 
+@media (max-width: 500px) {
+  .Qr-Image {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    width: calc(100% - 20px);
+  }
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+  }
+}
